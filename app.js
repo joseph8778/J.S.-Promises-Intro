@@ -6,7 +6,7 @@ const emailRef = document.querySelector(".email")
 // 1. Then
 fetch("https://jsonplaceholder.typicode.com/users/1")
     .then(response => {
-        return response.json()
+        return response.json() //Return makes entire fetch a promise of response.json
     })
 
    .then(data => {
